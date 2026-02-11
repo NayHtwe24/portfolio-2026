@@ -30,7 +30,7 @@ export default function About() {
       <Row gutter={[24, 24]}>
         {stats.map((stat) => (
           <Col xs={12} sm={6} key={stat.label}>
-            <Card hoverable style={{ textAlign: 'center', borderRadius: 16 }}>
+            <Card hoverable style={{ textAlign: 'center', borderRadius: 16, height: '100%' }}>
               <div style={{ color: primary, marginBottom: 8, display: 'flex', justifyContent: 'center' }}>{stat.icon}</div>
               <Statistic title={stat.label} value={stat.value} valueStyle={{ fontSize: 20, fontWeight: 600 }} />
             </Card>
