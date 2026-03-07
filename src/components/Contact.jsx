@@ -10,9 +10,9 @@ const { Title, Paragraph, Text, Link } = Typography;
 const { TextArea } = Input;
 
 // TODO: Replace these with your actual EmailJS credentials
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID = 'service_3raosxg';
+const EMAILJS_TEMPLATE_ID = 'template_4qq641c';
+const EMAILJS_PUBLIC_KEY = 'dWEU1J1bNj3NI6bGO';
 
 const contactInfo = [
   { icon: <MdEmail size={20} />, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
