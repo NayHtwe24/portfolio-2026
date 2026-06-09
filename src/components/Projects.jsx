@@ -1,4 +1,5 @@
 import { Typography, Row, Col, Card, Tag } from 'antd';
+import { MdLock, MdOpenInNew } from 'react-icons/md';
 import { useThemeMode } from '../context/ThemeContext';
 import { projects } from '../data/profile';
 
@@ -27,22 +28,63 @@ export default function Projects() {
                   borderTop: `4px solid ${project.color}`,
                 }}
               >
-                <div
-                  style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: '50%',
-                    background: isDark ? `${project.color}20` : `${project.color}14`,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginBottom: 12,
-                    fontSize: 18,
-                    fontWeight: 700,
-                    color: project.color,
-                  }}
-                >
-                  {project.title.charAt(0)}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 12 }}>
+                  <div
+                    style={{
+                      width: 40,
+                      height: 40,
+                      borderRadius: '50%',
+                      background: isDark ? `${project.color}20` : `${project.color}14`,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: 18,
+                      fontWeight: 700,
+                      color: project.color,
+                    }}
+                  >
+                    {project.title.charAt(0)}
+                  </div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: 4,
+                          padding: '3px 10px',
+                          borderRadius: 20,
+                          background: isDark ? `${project.color}20` : `${project.color}14`,
+                          color: project.color,
+                          fontSize: 11,
+                          fontWeight: 500,
+                          textDecoration: 'none',
+                        }}
+                      >
+                        <MdOpenInNew size={11} />
+                        Visit
+                      </a>
+                    )}
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 4,
+                        padding: '3px 10px',
+                        borderRadius: 20,
+                        background: isDark ? 'rgba(255,255,255,0.06)' : '#f1f3f4',
+                        color: isDark ? '#9aa0a6' : '#5f6368',
+                        fontSize: 11,
+                        fontWeight: 500,
+                      }}
+                    >
+                      <MdLock size={11} />
+                      Private
+                    </div>
+                  </div>
                 </div>
                 <Title level={4} style={{ marginTop: 0 }}>{project.title}</Title>
                 <Paragraph style={{ color: isDark ? '#9aa0a6' : '#5f6368' }}>{project.description}</Paragraph>

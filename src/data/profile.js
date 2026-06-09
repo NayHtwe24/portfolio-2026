@@ -2,16 +2,15 @@ import {
   MdCode,
   MdCloud,
   MdSmartToy,
-  MdPhoneIphone,
-  MdStorage,
+MdStorage,
   MdScience,
 } from 'react-icons/md';
 
 export const profile = {
   name: 'Nay Htwe Hlaing',
-  title: 'Software Engineer',
+  title: 'Full-Stack Developer & AI/ML Engineer',
   subtitle: 'Building intelligent software solutions across the full stack',
-  location: 'Singapore',
+  location: 'Yangon, Myanmar',
   email: 'nayhtwehlaing2@gmail.com',
   github: 'https://github.com/NayHtwe24',
   linkedin: 'https://www.linkedin.com/in/nayhtwe-hlaing-446748136',
@@ -46,12 +45,6 @@ export const skills = [
     title: 'Databases',
     color: '#fbbc04',
     items: ['MySQL', 'MongoDB', 'PostgreSQL', 'SQLite', 'Redis', 'ChromaDB (Vector DB)'],
-  },
-  {
-    icon: MdPhoneIphone,
-    title: 'Mobile Development',
-    color: '#ea4335',
-    items: ['Flutter', 'Dart', 'iOS (Xcode)', 'Android Studio', 'Cross-Platform Apps'],
   },
   {
     icon: MdScience,
@@ -107,6 +100,7 @@ export const projects = [
       'Enterprise B2B platform for global trade management featuring trade contracts, company management, QR code generation, and cloud storage integration.',
     tags: ['Laravel', 'Vue.js', 'MySQL', 'Google Cloud Storage'],
     color: '#1a73e8',
+    link: 'https://www.dimutopay.io',
   },
   {
     title: 'Product Quality AI',
@@ -135,6 +129,7 @@ export const projects = [
       'Groundbreaking DiMuto x Intel collaboration for offline AI-powered quality inspection in warehouses. Runs real-time fruit defect detection on Intel Core Ultra processors with OpenVINO, enabling carton scanning, photo capture, and AI analysis without internet connectivity for the global fresh produce supply chain.',
     tags: ['.NET', 'C#', 'OpenCV', 'Intel OpenVINO', 'Hardware Integration'],
     color: '#e8710a',
+    link: 'https://www.dimuto.io',
   },
   {
     title: 'Bloom & Belle Shop',
@@ -149,6 +144,7 @@ export const projects = [
       'Full-featured travel booking web application with tour packages, reservation management, and integrated payment processing for seamless online bookings.',
     tags: ['Laravel', 'Vue.js', 'Payment Integration'],
     color: '#34a853',
+    link: 'https://bnfexpress.com',
   },
   {
     title: 'BetterHR',
@@ -156,6 +152,7 @@ export const projects = [
       'Comprehensive HR management platform with employee management, payroll processing with bank integration, attendance tracking, and organizational workflows.',
     tags: ['Laravel', 'Vue.js', 'GraphQL', 'React', 'Node.js', 'Payroll', 'Bank Integration'],
     color: '#9334e6',
+    link: 'https://www.betterhr.com',
   },
   {
     title: 'Myanmar VAS System',
